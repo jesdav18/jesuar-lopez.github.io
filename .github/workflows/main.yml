@@ -16,7 +16,7 @@ jobs:
         HOST: ${{ secrets.HOST }}
         USERNAME: ${{ secrets.USERNAME }}
         PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSHKEY }}
+        KEY: ${{ secrets.ssh_password }}
       with:
         source: "."
         target: "/home/vkm/domains/nagaira.com/public_html/etc/pruebas"
