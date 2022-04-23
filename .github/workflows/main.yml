@@ -16,7 +16,7 @@ jobs:
         HOST: 89.47.162.195
         USERNAME: jesdav
         PORT: 22
-        KEY: ${{ secrets.SSH_PASSWORD }}
+        PASSWORD: CINthya2218*
       with:
         source: "."
         target: "/home/vkm/domains/nagaira.com/public_html/etc/pruebas"
@@ -24,8 +24,8 @@ jobs:
     - name: Executing remote command
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.SSH_PASSWORD }}
+        HOST: 89.47.162.195
+        USERNAME: jesdav
+        PORT: 22
+        PASSWORD: CINthya2218*
         script: ls
